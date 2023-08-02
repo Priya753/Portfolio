@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primarycolor:grey;
+    --fontFamily:'Fira Sans', sans-serif;
+}
+.dflex{
+    display: flex;
+    justify-content:space-around;
+
+}
+.sidebar {
+    position:absolute;
+    background-color:var(--primarycolor);
+    width: 270px;
+    height: 100vh;
+    font-family:var(--fontFamily);
+    transition: transform 0.3s ease-in;
+     
+}
+.sidebarGo{
+    transform: translate(-270px,0px);
+      position:absolute;
+}
+.ham{
+position: absolute;
+top: 14px; 
+cursor:pointer;
+left:10px;
+margin-top: 12px;
+}
+
+.cross{
+position:absolute;
+left: 229px;
+margin-top: 10px;
+
+}
+.sidebar nav {
+    padding: 39px;
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 27px;
+    padding: 25px 0;
+}
+a{
+     text-decoration: none;
+     color:white;
+}
+.main {
+    /* background-color: yellow; */
+    width: 73vw;
+    margin-left:289px;
+    padding:12px;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+}
+
+.info-container {
+    margin: 146px auto;
+    /* background-color:#a01890; */
+    height: 68vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.devpic img {
+    width: 298px;
+    height: 68vh;
+}
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    /* font-size: 60px; */
+    font-size: 55px;
+
+}
+
+.name {
+    /* font-size: 50px; */
+    font-size: 40px;
+   font-family:var(--fontFamily);
+    font-weight: bold;
+    
+}
+
+.about {
+
+    /* font-size: 40px; */
+    margin:auto;
+    font-size: 30px;
+}
+
+.moreabout {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.moreabout p {
+    /* font-size: 20px; */
+    font-style: italic;
+
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    margin: 0 3px;
+    font-size: 21px;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color:dodgerblue;
+}
+
+/* @media (max-width:1615px) {
+    .sidebar{
+        transform: translate(-443px,0px);
+        position:absolute;
+    }
+    
+} */
+/* skills  */
+.proj{
+    margin-top: 20px;
+}
+.proj *{
+    color:dodgerblue;
+    font-family:var(--fontFamily);
+}
+
+.proj  div a:hover{
+    color:black;
+    border:1px solid dodgerblue;
+}
